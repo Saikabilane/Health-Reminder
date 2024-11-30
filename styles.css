@@ -42,8 +42,9 @@ p {
 
 #settingsPanel {
   margin-top: 20px;
-  background: white;
-  color: #333;
+  background: black;
+  opacity: 0.9;
+  color: white;
   border-radius: 5px;
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
