@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #76b852, #8DC26F);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 500px;
+  position: relative;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#settingsButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#settingsButton:hover {
+  transform: rotate(90deg);
+}
+
+#settingsPanel {
+  margin-top: 20px;
+  background: white;
+  color: #333;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#settingsPanel label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+#settingsPanel input {
+  width: 100px;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+#settingsPanel input:hover {
+  background: #f0f0f0;
+}
+
+#settingsPanel button {
+  margin-top: 10px;
+  padding: 5px 15px;
+  font-size: 1rem;
+  background-color: #5a9d42;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#settingsPanel button:hover {
+  background-color: #4b8c39;
+}
+
+#notifications {
+  margin-top: 20px;
+}
+
+.notification {
+  background: white;
+  color: #333;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification .time {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.notification .thumb {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #76b852;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.notification .thumb:hover {
+  transform: scale(1.2);
+}
