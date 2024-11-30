@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Notifications</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Settings Button -->
+    <button id="settingsButton" title="Settings">⚙️</button>
+
+    <!-- Hidden Settings Panel -->
+    <div id="settingsPanel" class="hidden">
+      <h2>Set Reminder Intervals</h2>
+      <label for="drinkInterval">Drink Water (minutes):</label>
+      <input type="number" id="drinkInterval" min="1" value="60" title="Hover to edit">
+      <label for="eatInterval">Eat Food (minutes):</label>
+      <input type="number" id="eatInterval" min="1" value="120" title="Hover to edit">
+      <div><button id="updateIntervals">Update</button>
+      <button id="clearAll">Clear All</button></div>
+    </div>
+
+    <h1>Health Reminder</h1>
+    <p>Stay healthy by eating and drinking water on time!</p>
+
+    <div id="notifications"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
